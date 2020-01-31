@@ -99,15 +99,18 @@ inquirer.prompt(questions).then(function({ username, color }) {
     }
     p{
       text-align: center;
+      font-family: Arial, Helvetica, sans-serif
     }
    #section
      {
       font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif
      text-align: center;
       width:40%;
       padding: 10px;
       margin:10px;
       border-radius: 5px;
+      display:flex;
     }
   
   h1

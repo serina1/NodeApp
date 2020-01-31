@@ -58,7 +58,7 @@ function generateHTML(data) {
          body {
          background-color: white;
          -webkit-print-color-adjust: exact !important;
-         font-family: 'Cabin', sans-serif;
+         font-family: Arial, Helvetica, sans-serif;
          }
          main {
          background-color: #E9EDEE;
@@ -66,7 +66,7 @@ function generateHTML(data) {
          padding-top: 30px;
          }
          h1, h2, h3, h4, h5, h6 {
-         font-family: 'BioRhyme', serif;
+          font-family: Arial, Helvetica, sans-serif;
          margin: 0;
          }
          h1 {
@@ -115,10 +115,13 @@ function generateHTML(data) {
          }
          .photo-header h1 {
          margin-top: 10px;
+         font-family: Arial, Helvetica, sans-serif;
          }
          .links-nav {
          width: 100%;
          text-align: center;
+         list-style:none;
+
          padding: 20px 0;
          font-size: 1.1em;
          }
@@ -139,9 +142,8 @@ function generateHTML(data) {
          }
 
          .row {
-           display: flex;
-           flex-wrap: wrap;
-           justify-content: space-between;
+          display:flex;
+          justify-content: space-around;     
            margin-top: 20px;
            margin-bottom: 20px;
          }
@@ -152,7 +154,7 @@ function generateHTML(data) {
            background-color: ${colors[data.color].headerBackground};
            color: ${colors[data.color].headerColor};
            margin: 20px;
-           display: inline-flex;
+           
          }
          
          .col {
